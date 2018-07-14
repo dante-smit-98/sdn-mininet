@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!-- MPD file Generated with GPAC version 0.7.2-DEV-rev450-gb96337ac-master  at 2018-04-12T18:08:57.226Z-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" minBufferTime="PT1.500S" type="static" mediaPresentationDuration="PT0H9M56.459S" maxSegmentDuration="PT0H0M7.500S" profiles="urn:mpeg:dash:profile:isoff-on-demand:2011,http://dashif.org/guidelines/dash264">
+ <ProgramInformation moreInformationURL="http://gpac.io">
+  <Title>BBB</Title>
+ </ProgramInformation>
+
+ <Period duration="PT0H9M56.459S">
+  <AdaptationSet segmentAlignment="true" lang="und" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+   <Representation id="1" mimeType="audio/mp4" codecs="mp4a.40.2" audioSamplingRate="48000" startWithSAP="1" bandwidth="130852">
+    <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+    <BaseURL>input_audio_128k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="878-2349">
+      <Initialization range="0-877"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+  <AdaptationSet segmentAlignment="true" maxWidth="1280" maxHeight="720" maxFrameRate="24" par="16:9" lang="und" subsegmentAlignment="true" subsegmentStartsWithSAP="1">
+   <Representation id="2" mimeType="video/mp4" codecs="avc1.64000D" width="160" height="90" frameRate="24" sar="1:1" startWithSAP="1" bandwidth="250323">
+    <BaseURL>input_video_160x90_250k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="920-2043">
+      <Initialization range="0-919"/>
+    </SegmentBase>
+   </Representation>
+   <Representation id="3" mimeType="video/mp4" codecs="avc1.640014" width="320" height="180" frameRate="24" sar="1:1" startWithSAP="1" bandwidth="503218">
+    <BaseURL>input_video_320x180_500k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="921-2044">
+      <Initialization range="0-920"/>
+    </SegmentBase>
+   </Representation>
+   <Representation id="4" mimeType="video/mp4" codecs="avc1.64001E" width="640" height="360" frameRate="24" sar="1:1" startWithSAP="1" bandwidth="770267">
+    <BaseURL>input_video_640x360_750k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="921-2032">
+      <Initialization range="0-920"/>
+    </SegmentBase>
+   </Representation>
+   <Representation id="5" mimeType="video/mp4" codecs="avc1.64001E" width="640" height="360" frameRate="24" sar="1:1" startWithSAP="1" bandwidth="1030897">
+    <BaseURL>input_video_640x360_1000k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="921-2032">
+      <Initialization range="0-920"/>
+    </SegmentBase>
+   </Representation>
+   <Representation id="6" mimeType="video/mp4" codecs="avc1.64001F" width="1280" height="720" frameRate="24" sar="1:1" startWithSAP="1" bandwidth="1488678">
+    <BaseURL>input_video_1280x720_1500k_dashinit.mp4</BaseURL>
+    <SegmentBase indexRangeExact="true" indexRange="921-2032">
+      <Initialization range="0-920"/>
+    </SegmentBase>
+   </Representation>
+  </AdaptationSet>
+ </Period>
+</MPD>
